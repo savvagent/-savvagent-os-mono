@@ -1,0 +1,38 @@
+{
+  "name": "@savvagent-os/tiny-uri",
+  "version": "1.0.0",
+  "description": "Lightweight Javascript library for handling URLs",
+  "keywords": [
+    "Lightweight",
+    "Javascript",
+    "library",
+    "es2015",
+    "URLs"
+  ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/esm/index.js"
+    }
+  },
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "dev": "nodemon -w esbuild.config.js esbuild.config.js --watch",
+    "cypress:open": "npx cypress open",
+    "cypress:run": "cypress run",
+    "docs": "npx esdoc -c .esdoc.json",
+    "test": "npx cypress run"
+  },
+  "author": "rob@savvagent.com",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^9.5.3",
+    "esbuild": "^0.15.14",
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0"
+  },
+  "type": "module"
+}

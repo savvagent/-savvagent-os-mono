@@ -1,0 +1,46 @@
+{
+  "name": "@savvagent-os/tiny-i18next",
+  "version": "1.0.0",
+  "description": "A lightweight translation module for modern Javascript",
+  "module": "dist/I18next.js",
+  "main": "dist/I18next.js",
+  "types": "dist/I18next.d.ts",
+  "scripts": {
+    "build": "rimraf dist && node ./esbuild.config.js",
+    "build:watch": "rimraf dist && node ./esbuild.config.js -w",
+    "check": "tsc -w",
+    "del": "rimraf dist",
+    "dev": "run-s build:watch",
+    "postinstall": "run-s build"
+  },
+  "author": "rob@hixfamily.org",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "*",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "chai": "^4.3.6",
+    "esbuild": "^0.14.38",
+    "esbuild-serve": "^1.0.1",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "esm": "^3.2.25",
+    "glob": "^8.0.1",
+    "mocha": "^10.0.0",
+    "mock-socket": "^9.1.3",
+    "playwright-test": "^7.4.0",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "sinon": "^14.0.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "type": "module"
+}

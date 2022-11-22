@@ -1,0 +1,58 @@
+{
+  "name": "@savvagent-os/tiny-url-template",
+  "version": "1.0.0",
+  "description": "Lightweight Javascript library that complies with RFC 6570 for expanding URL Templates.",
+  "keywords": [
+    "Lightweight",
+    "Javascript",
+    "library",
+    "es2015",
+    "URI Templates",
+    "RFC 6570"
+  ],
+  "repository": "https://github.com/robhicks/tiny-url-template.git",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/esm/index.js"
+    }
+  },
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "build:w": "nodemon -w esbuild.config.js -w src esbuild.config.js --watch",
+    "dev:server": "web-dev-server --node-resolve --port 8081 test/ --watch",
+    "dev": "run-p build:w dev:server",
+    "docs": "esdoc -c .esdoc.json",
+    "jasmine": "jasmine-node spec --color --verbose --autotest --watch src --watch spec",
+    "postinstall": "node esbuild.config.js",
+    "test": "jasmine-node spec"
+  },
+  "author": "rob@hixfamily.org",
+  "license": "MIT",
+  "devDependencies": {
+    "@web/dev-server": "^0.1.32",
+    "chai": "^4.3.6",
+    "esbuild": "^0.14.54",
+    "esdoc": "^1.1.0",
+    "eslint": "^8.19.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "esm": "^3.2.25",
+    "fetch-mock": "^9.11.0",
+    "mocha": "^10.0.0",
+    "msw": "^0.43.1",
+    "node-fetch": "^3.2.8",
+    "nodemon": "^2.0.19",
+    "sinon": "^14.0.0"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "@savvagent-os/tiny-uri": "workspace:*"
+  },
+  "type": "module"
+}
