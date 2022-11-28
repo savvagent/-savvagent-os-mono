@@ -1,5 +1,5 @@
 {
-  "name": "@savvagent-os/tiny-uri",
+  "name": "@savvagent/tiny-uri",
   "version": "1.0.1",
   "description": "Lightweight Javascript library for handling URLs",
   "keywords": [

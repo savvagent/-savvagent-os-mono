@@ -71,4 +71,4 @@ class Hdrs {
   }
 }
 
-export { TinyUri } from '@savvagent-os/tiny-uri'
+export { TinyUri } from '@savvagent/tiny-uri'

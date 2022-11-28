@@ -1,4 +1,4 @@
-import { TinyUri } from '@savvagent-os/tiny-uri'
+import { TinyUri } from '@savvagent/tiny-uri'
 const tRegEx = /({(.+?)})/g
 
 export default class TinyUrlTemplate {

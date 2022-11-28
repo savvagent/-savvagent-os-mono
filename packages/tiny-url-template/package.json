@@ -1,5 +1,5 @@
 {
-  "name": "@savvagent-os/tiny-url-template",
+  "name": "@savvagent/tiny-url-template",
   "version": "1.0.1",
   "description": "Lightweight Javascript library that complies with RFC 6570 for expanding URL Templates.",
   "keywords": [
@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "npm-run-all": "^4.1.5",
-    "@savvagent-os/tiny-uri": "workspace:*"
+    "@savvagent/tiny-uri": "workspace:*"
   },
   "type": "module"
 }

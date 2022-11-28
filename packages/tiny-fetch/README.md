@@ -29,13 +29,13 @@ tiny-fetch has been developed with modern Javascript. Your project must be able 
 tiny-fetch can be installed with either npm or yarn.
 
 ```shell
-yarn add @savvagent-os/tiny-fetch
+yarn add @savvagent/tiny-fetch
 ```
 
 or
 
 ```shell
-npm i @savvagent-os/tiny-fetch -S
+npm i @savvagent/tiny-fetch -S
 ```
 
 ## Use
@@ -55,7 +55,7 @@ const resp = await client.request('http://some.url/', fetchOptions = {});
 You can create your own interceptors and add and remove them dynamically.
 
 ```Javascript
-import { TinyFetch } from '@savvagent-os/tiny-fetch';
+import { TinyFetch } from '@savvagent/tiny-fetch';
 import { interceptor, interceptor1, interceptor2 } from '../interceptors';
 
 const client = new TinyFetch();
