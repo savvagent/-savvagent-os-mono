@@ -1,6 +1,6 @@
 {
   "name": "savvagent-os-mono",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "description": "Mono repo of some tiny things",
   "packageManager": "pnpm@7.17.1",
