@@ -1,24 +1,31 @@
 {
   "name": "savvagent-os-mono",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "Mono repo of some tiny things",
+  "packageManager": "pnpm@7.17.1",
   "main": "index.js",
   "scripts": {
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@changesets/cli": "^2.25.2",
+    "savvagent-os-mono": "link:"
+  },
   "devDependencies": {
     "@skypack/package-check": "^0.2.2",
     "@web/dev-server": "^0.1.32",
+    "bumpp": "^8.2.1",
     "esbuild": "^0.15.14",
+    "eslint": "^8.27.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.2.4",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint": "^8.27.0",
     "prettier": "^2.6.2"
   }
 }
