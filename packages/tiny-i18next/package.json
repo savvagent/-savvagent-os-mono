@@ -2,12 +2,19 @@
   "name": "@savvagent-os/tiny-i18next",
   "version": "1.0.0",
   "description": "A lightweight translation module for modern Javascript",
-  "module": "dist/I18next.js",
-  "main": "dist/I18next.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/esm/index.js"
+    }
+  },
   "types": "dist/I18next.d.ts",
   "scripts": {
     "build": "rimraf dist && node ./esbuild.config.js",
-    "build:watch": "rimraf dist && node ./esbuild.config.js -w",
+    "build:watch": "rimraf dist && node ./esbuild.config.js --watch",
     "check": "tsc -w",
     "del": "rimraf dist",
     "dev": "run-s build:watch",
