@@ -37,4 +37,6 @@ const testConfig = {
   sourcemap: false,
 }
 
-Promise.all([build(browserConfig), build(cjsConfig), build(testConfig)]).catch((err) => console.log('err', err))
+Promise.all([build(browserConfig), build(cjsConfig), watch && build(testConfig)]).catch((err) =>
+  console.log('err', err)
+)
