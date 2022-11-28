@@ -6,6 +6,8 @@
   "packageManager": "pnpm@7.17.1",
   "main": "index.js",
   "scripts": {
+    "buld": "pnpm -r build",
+    "dev": "pnpm -r dev",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
