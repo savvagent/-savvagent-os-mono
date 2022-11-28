@@ -1,6 +1,6 @@
 {
   "name": "@savvagent/tiny-url-template",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Lightweight Javascript library that complies with RFC 6570 for expanding URL Templates.",
   "keywords": [
     "Lightweight",
