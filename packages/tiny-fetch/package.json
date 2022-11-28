@@ -1,6 +1,6 @@
 {
   "name": "@savvagent/tiny-fetch",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Lightweight isomorphic JavaScript HTTP client",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
