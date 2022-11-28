@@ -1,5 +1,5 @@
 {
-  "name": "@savvagent-os/mono",
+  "name": "savvagent-os-mono",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "@skypack/package-check": "^0.2.2",
