@@ -3,7 +3,6 @@ import { build } from 'esbuild'
 const entryPoints = ['src/index.js']
 
 const args = process.argv
-console.log(`args`, args)
 
 const watch = args.includes('--watch')
 

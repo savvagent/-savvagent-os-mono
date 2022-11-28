@@ -22,8 +22,8 @@
   },
   "scripts": {
     "build": "node esbuild.config.js",
-    "build:w": "nodemon -w esbuild.config.js -w src esbuild.config.js --watch",
-    "dev:server": "web-dev-server --node-resolve --port 8081 test/ --watch",
+    "build:w": "node esbuild.config.js --watch",
+    "dev:server": "web-dev-server --node-resolve --port 8081 spec/ --watch",
     "dev": "run-p build:w dev:server",
     "docs": "esdoc -c .esdoc.json",
     "jasmine": "jasmine-node spec --color --verbose --autotest --watch src --watch spec",

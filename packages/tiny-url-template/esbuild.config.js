@@ -10,8 +10,8 @@ const browserConfig = {
   bundle: true,
   entryPoints,
   format: 'esm',
-  minify: true,
-  sourcemap: true,
+  minify: !watch,
+  sourcemap: !watch,
   outdir: 'dist/esm',
   ...(watch && { watch: true }),
 }
@@ -20,8 +20,6 @@ const cjsConfig = {
   ...browserConfig,
   ...{
     format: 'cjs',
-    minify: false,
-    sourcemap: false,
     outdir: 'dist/cjs',
     target: ['node16.0'],
   },
