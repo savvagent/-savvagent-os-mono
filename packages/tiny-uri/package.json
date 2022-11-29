@@ -20,10 +20,11 @@
   },
   "scripts": {
     "build": "node esbuild.config.js",
-    "dev": "nodemon -w esbuild.config.js esbuild.config.js --watch",
     "cypress:open": "npx cypress open",
     "cypress:run": "cypress run",
+    "dev": "nodemon -w esbuild.config.js esbuild.config.js --watch",
     "docs": "npx esdoc -c .esdoc.json",
+    "postinstall": "node esbuild.config.js",
     "test": "npx cypress run"
   },
   "author": "rob@savvagent.com",

@@ -18,7 +18,7 @@
     "check": "tsc -w",
     "del": "rimraf dist",
     "dev": "run-s build:watch",
-    "postinstall": "run-s build"
+    "postinstall": "node ./esbuild.config.js"
   },
   "author": "rob@hixfamily.org",
   "engines": {
