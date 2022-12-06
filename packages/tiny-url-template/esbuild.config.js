@@ -21,6 +21,7 @@ const cjsConfig = {
   ...{
     format: 'cjs',
     outdir: 'dist/cjs',
+    outExtension: { '.js': '.cjs' },
     target: ['node16.0'],
   },
 }

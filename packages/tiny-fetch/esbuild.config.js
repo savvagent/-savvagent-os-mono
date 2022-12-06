@@ -23,6 +23,7 @@ const cjsConfig = {
     minify: false,
     sourcemap: false,
     outdir: 'dist/cjs',
+    outExtension: { '.js': '.cjs' },
     target: ['node16.0'],
   },
 }
