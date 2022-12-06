@@ -1,6 +1,6 @@
 {
   "name": "@savvagent/tiny-uri",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Lightweight Javascript library for handling URLs",
   "keywords": [
     "Lightweight",
