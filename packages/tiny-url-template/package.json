@@ -11,11 +11,11 @@
     "RFC 6570"
   ],
   "repository": "https://github.com/robhicks/tiny-url-template.git",
-  "main": "./dist/cjs/index.js",
+  "main": "./dist/cjs/index.cjs",
   "module": "./dist/esm/index.js",
   "exports": {
     ".": {
-      "require": "./dist/cjs/index.js",
+      "require": "./dist/cjs/index.cjs",
       "import": "./dist/esm/index.js",
       "default": "./dist/esm/index.js"
     }
