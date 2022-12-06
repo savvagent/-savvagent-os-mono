@@ -20,20 +20,23 @@
   },
   "scripts": {
     "build": "node esbuild.config.js",
-    "cypress:open": "npx cypress open",
-    "cypress:run": "cypress run",
     "dev": "nodemon -w esbuild.config.js esbuild.config.js --watch",
     "docs": "npx esdoc -c .esdoc.json",
     "postinstall": "node esbuild.config.js",
-    "test": "npx cypress run"
+    "test": "uvu tests",
+    "test:coverage": "c8 --include=src npm test",
+    "watch": "pnpm test && watchlist src tests -- pnpm test"
   },
   "author": "rob@savvagent.com",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^9.5.3",
+    "c8": "^7.12.0",
     "esbuild": "^0.15.14",
+    "esbuild-register": "^3.4.1",
     "esdoc": "^1.1.0",
-    "esdoc-standard-plugin": "^1.0.0"
+    "esdoc-standard-plugin": "^1.0.0",
+    "uvu": "^0.5.6",
+    "watchlist": "^0.3.1"
   },
   "type": "module"
 }
