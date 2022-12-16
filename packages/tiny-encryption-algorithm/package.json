@@ -1,0 +1,29 @@
+{
+  "name": "tiny-encryption-algorithm",
+  "version": "2.0.0",
+  "main": "./dist/cjs/index.cjs",``
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.cjs",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/esm/index.js"
+    }
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "esbuild": "^0.16.7",
+    "esbuild-dev-server": "^0.3.0",
+    "esbuild-plugin-dev-server": "^1.1.3",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.19",
+    "sinon": "^15.0.1"
+  },
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "build:w": "node esbuild.config.js --watch",
+    "postinstall": "node esbuild.config.js"
+  },
+  "type": "module"
+}
