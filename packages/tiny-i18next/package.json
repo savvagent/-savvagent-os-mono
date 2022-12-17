@@ -1,6 +1,6 @@
 {
   "name": "@savvagent/tiny-i18next",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "A lightweight translation module for modern Javascript",
   "main": "./dist/cjs/index.cjs",
   "module": "./dist/esm/index.js",
