@@ -1,0 +1,26 @@
+{
+  "name": "@savvagent/tiny-ofx",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "18"
+  },
+  "scripts": {
+    "dev": "nodemon -w esbuild.config.js esbuild.config.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "*",
+    "esbuild": "0.16.8",
+    "esbuild-node-externals": "^1.6.0",
+    "esbuild-node-tsc": "^2.0.4",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "typescript": "^4.6.4"
+  },
+  "type": "module"
+}
